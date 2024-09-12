@@ -264,7 +264,6 @@ header{
 
 .card .card-img {
     width: 100%;
-    /* kode di bawah untuk membatasi tinggi card image */
     height: 200px;
     overflow: hidden;
 }
@@ -276,3 +275,4 @@ header{
 .card section {
     padding: 10px;
 }
+

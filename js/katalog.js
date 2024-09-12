@@ -12,24 +12,24 @@ function getProduct() {
         product.description = shortText(product.description, 300);
         product.title = shortText(product.title, 70);
         container.insertAdjacentHTML(
-          "beforeend",
-          `<div class="card">
-                        <div class="card-img">
-                            <img src="${product.image}"
-                                alt="img product">
-                        </div>
-                        <section class="fonts">
-                            <p class="fw-bold">${product.title}</p>
-                            <hr>
-                            <p>${product.description}</p>
-                            <br>
-                            <p><b>Category:</b> ${product.category}</p>
-                            <p><b>Price:</b> $${product.price}</p>
-                            <br>
-                            <button class="bt-daftar fonts">Detail</button>
-                            <button class="bt-buy fonts">Buy</button>
-                        </section>
-                    </div>`
+            "beforeend",
+            `<div class="card">
+                <div class="card-img">
+                    <img src="${product.image}"
+                        alt="img product">
+                </div>
+                <section class="fonts">
+                    <p class="fw-bold">${product.title}</p>
+                    <hr>
+                    <p>${product.description}</p>
+                    <br>
+                    <p><b>Category:</b> ${product.category}</p>
+                    <p><b>Price:</b> $${product.price}</p>
+                    <br>
+                </section>
+                <button class="bt-daftar fonts" style="bottom:0; left:0;">Detail</button>
+                <button class="bt-buy fonts" style="bottom:0; left:0;">Buy</button>
+            </div>`
         );
             });
         });
