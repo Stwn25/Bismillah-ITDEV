@@ -125,13 +125,6 @@ header{
 
 /* Produk Pilihan */
 
-.choose-style{
-    width: 100%;
-    background-color: #FFFAF2;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
 
 .choose-style > *{
     margin: 60px 0 100px;
