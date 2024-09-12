@@ -70,7 +70,7 @@ header{
     gap: 20px;
 }
 
-.authen button{
+.fonts{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     cursor: pointer;
@@ -109,6 +109,20 @@ header{
     background-color: rgb(58, 58, 58);
 }
 
+.bt-buy{
+    padding: 5px 25px;
+    background-color: #676767;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.bt-buy:hover{
+    background-color: rgb(113, 113, 113);
+}
 
 .choose-style h1{
     font-size: 400%;
@@ -242,7 +256,7 @@ header{
 }
 
 .card {
-    width: 200px;
+    width: 300px;
     box-shadow: 2px 2px 5px grey;
     border-radius: 10px;
     overflow: hidden;

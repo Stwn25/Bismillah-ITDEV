@@ -9,8 +9,8 @@ function getProduct() {
     .then((data) => {
         var container = document.querySelector("#product_container");
         data.forEach((product) => {
-        product.description = shortText(product.description, 100);
-        product.title = shortText(product.title, 50);
+        product.description = shortText(product.description, 300);
+        product.title = shortText(product.title, 70);
         container.insertAdjacentHTML(
           "beforeend",
           `<div class="card">
@@ -18,17 +18,16 @@ function getProduct() {
                             <img src="${product.image}"
                                 alt="img product">
                         </div>
-                        <section>
-                                                    <p class="fw-bold">${
-                                                      product.title
-                                                    }</p>
+                        <section class="fonts">
+                            <p class="fw-bold">${product.title}</p>
+                            <hr>
                             <p>${product.description}</p>
-                            <p>${product.description}</p>
-                            <p>Kategori: ${product.category}</p>
-                            <p>Harga: $${product.price}</p>
-                            <a href="detail/detail.html?id=${product.id}">
-                                <button class="bg-blue p-2 text-white fw-bold border-radius shadow">detail</button>
-                            </a>
+                            <br>
+                            <p><b>Category:</b> ${product.category}</p>
+                            <p><b>Price:</b> $${product.price}</p>
+                            <br>
+                            <button class="bt-daftar fonts">Detail</button>
+                            <button class="bt-buy fonts">Buy</button>
                         </section>
                     </div>`
         );
