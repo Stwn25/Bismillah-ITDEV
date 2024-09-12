@@ -8,10 +8,6 @@
     overflow-x: hidden;
 }
 
-img{
-    width: 100%;
-}
-
 /* header */
 
 header{
@@ -21,6 +17,10 @@ header{
     display: flex;
     justify-content: center;  
     z-index: 999;
+}
+
+.fw-bold {
+    font-weight: bold;
 }
 
 .container-header{
@@ -62,6 +62,7 @@ header{
 .container-header h1{
     font-size: 350%;
     font-family: 'Kaisei Opti', serif;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .authen{
@@ -108,31 +109,6 @@ header{
     background-color: rgb(58, 58, 58);
 }
 
-/* Hero Section */
-.hero-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;   
-}
-
-.hero-section figure{
-    width: 1540px;
-    height: 700px;
-    background-image: url(./img/foto-page.png);   
-    /* background-position: center; */
-    background-size: cover;
-}
-
-/* Produk Pilihan */
-
-
-.choose-style > *{
-    margin: 60px 0 100px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 40px;
-}
 
 .choose-style h1{
     font-size: 400%;
@@ -160,10 +136,7 @@ header{
     -o-transition: 0.3s;
     position: relative;
 }
-
-.container-cs > *:hover{
-}
-
+/* Batas Header */
 .overlay-text{
     position: absolute;
     top: 0;
@@ -208,27 +181,6 @@ header{
 
 /* Produk Pilihan */
 
-.choose-style{
-    width: 100%;
-    background-color: #FFFAF2;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.choose-style > *{
-    margin: 60px 0 100px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 40px;
-}
-
-.choose-style h1{
-    font-size: 400%;
-    font-family: 'Poppins', sans-serif;
-    width: 350px;
-}
 
 .container-cs{
     width: 1350px;
@@ -249,9 +201,6 @@ header{
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     position: relative;
-}
-
-.container-cs > *:hover{
 }
 
 .overlay-text{
