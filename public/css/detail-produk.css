@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;  
+    z-index: 999;
+}
+
+.container-header{
+    width: 1540px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    overflow: hidden;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    background-color: rgb(244, 244, 244);
+    padding: 5px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 0.1px solid rgb(216, 216, 216);
+}
+
+.search input{
+    background-color: rgb(244, 244, 244);
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-header figure{
+    cursor: pointer;
+}
+
+.container-header h1{
+    font-size: 350%;
+    font-family: 'Kaisei Opti', serif;
+}
+
+.authen{
+    display: flex;
+    gap: 20px;
+}
+
+.authen button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bt-masuk{
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 25px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.bt-masuk:hover{
+    border: 0.1px solid #262626;
+    border-radius: 8px;
+    padding: 5px 25px;
+}
+
+.bt-daftar{
+    padding: 5px 25px;
+    background-color: #262626;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.bt-daftar:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+/* main */
+main{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.container-main{
+    width: 1540px;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+}
+
+.container-main figure{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-main article{
+    font-family: 'Kaisei Opti', sans-serif;
+}
+
+.container-main .info-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    align-content: center;
+    position: sticky;
+    top: 200px; 
+}
+
+.container-main article button{
+    font-family: 'Kaisei Opti', sans-serif;
+    width: 50%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.container-main article a{
+    font-size: 80%;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.container-footer{
+    width: 1500px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container-footer > *{
+    padding: 20px;
+    margin-left: 50px;
+}
+
+footer p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-footer{
+    font-size: 150%;
+    font-family: 'Kaisesi Opti', serif;
+}
+
+footer a{
+    color: white;
+}
+
+.ft-1{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+.ft-2{
+    display: grid;
+    align-items: center;
+}
+.ft-2>*:hover{
+    text-decoration: underline;
+}
+.ft-3{
+    display: grid;
+    align-items: center;
+}
+.ft-3>*:hover{
+    text-decoration: underline;
+}
+.ft-4>*{
+    margin-top: 10px;
+}
+    
